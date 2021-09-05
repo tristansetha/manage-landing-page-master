@@ -1,3 +1,45 @@
 .header {
-	/* color: pink; */
+	position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 375px;
+  height: 59px;
+  padding: 0 24px 0 0;
+  /* border: 3px solid pink; */
+}
+
+.hamburgerContainer {
+  cursor: pointer;
+	display: flex;
+}
+
+/* .hamburgerContainer div {
+  width: 25px;
+  height: 4px;
+  background-color: black;
+} */
+
+/* .hamburgerContainer div:not(:first-child) {
+  margin: 4px 0 0 0;
+} */
+
+.hamburger {
+	
+}
+
+.logoContainer {
+	position: absolute;
+	left: 24px;
+	bottom: -7px;
+	display: flex;
+	cursor: pointer;
+}
+
+.logo {
+}
+
+.navContainer {
+  position: relative;
+  display: none;
 }

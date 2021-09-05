@@ -10,16 +10,6 @@
     "lint": "next lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ttttristan/manage-landing-page-master.git"
-  },
-  "author": "tristan s",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ttttristan/manage-landing-page-master/issues"
-  },
-  "homepage": "https://github.com/ttttristan/manage-landing-page-master#readme",
   "dependencies": {
     "next": "^11.1.2",
     "react": "^17.0.2",
