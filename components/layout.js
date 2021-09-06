@@ -5,7 +5,8 @@ import Footer from './footer/footer'
 
 export default function Layout({ children }) {
 	return (
-		<div className={styles.container}>
+		<div
+			className={styles.container}>
 			<Header logo="/logo.svg">
 				<ul>
 					<li>Pricing</li>

@@ -3,7 +3,6 @@ import Image from 'next/image'
 
 import styles from './header.module.css'
 const header = ({ children, logo }) => {
-	console.log(children)
 	return (
 		<header className={styles.header}>
 			<div className={styles.logoContainer}>
@@ -13,8 +12,8 @@ const header = ({ children, logo }) => {
 							priority
 							src={logo}
 							className={styles.logo}
-							height={24}
-							width={146}
+							height={18}
+							width={109}
 							alt="logo"
 						/>
 					</>

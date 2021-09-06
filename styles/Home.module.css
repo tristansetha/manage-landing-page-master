@@ -1,5 +1,71 @@
 .card {
-	width: 375px;
-	height: 2649px;
-	border: 1px solid red;
+  width: 375px;
+  height: 2649px;
+  /* border: 3px solid red; */
 }
+/* ILLUSTRATION */
+.heroContainer {
+  display: flex;
+  justify-content: center;
+  height: 373px;
+  width: 100%;
+}
+
+.illustrationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.illustrationContainer * {
+  /* border: 1px solid red; */
+}
+
+.illustration {
+}
+
+.summaryContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 380px;
+  /* border: 3px solid red; */
+}
+
+.summaryInfoContainer {
+  /* border: 2px solid blue; */
+  /* padding: 0 26px 0 36px; */
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.summaryInfoTitle {
+  padding: 0;
+  font-size: 37px;
+  font-weight: 700;
+  /* border: 3px solid red; */
+}
+
+.summaryInfo {
+  /* border: 3px solid red; */
+  padding: 10px 26px 26px 26px;
+	color: var(--darkGrayishBlue);
+  font-size: 16px;
+	line-height: 1.7rem;
+
+
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: center;
+	/* border:5px solid pink; */
+}
+
+/* #getStartedBtn {
+	color: pink;
+	background-color: var(--brightRed);
+	width: 1px;
+} */
+
+/* SUMMARY INFORMATION AND CALL TO ACTION */

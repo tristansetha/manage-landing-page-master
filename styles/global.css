@@ -1,12 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+
+:root {
+  --brightRed: hsl(12, 88%, 59%);
+  --darkBlue: hsl(228, 39%, 23%);
+  --darkGrayishBlue: hsl(227, 12%, 61%);
+  --veryDarkBlue: hsl(233, 12%, 13%);
+  --veryPaleRed: hsl(13, 100%, 96%);
+  --varyLightGray: hsl(0, 0%, 98%);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   line-height: 1.6;
   font-size: 18px;
+  font-family: "Be Vietnam", sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
+
+
+button {
+	height: 44px;
+	width: 137px;
+	border-radius: 125px;
+	border: none;
+	background-color: var(--brightRed);
+	color: var(--varyLightGray);
+	font-size: 0.80em;
+}
+/* .generalBtn1 {
+	color: var(--varyLightGray);
+} */
