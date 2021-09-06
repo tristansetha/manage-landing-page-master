@@ -32,6 +32,7 @@ button {
 	background-color: var(--brightRed);
 	color: var(--varyLightGray);
 	font-size: 0.80em;
+	cursor: pointer;
 }
 /* .generalBtn1 {
 	color: var(--varyLightGray);
