@@ -16,6 +16,7 @@ body {
   line-height: 1.6;
   font-size: 18px;
   font-family: "Be Vietnam", sans-serif;
+	
 }
 
 * {
@@ -31,9 +32,11 @@ button {
 	border: none;
 	background-color: var(--brightRed);
 	color: var(--varyLightGray);
-	font-size: 0.80em;
+	font-size: 13px;
 	cursor: pointer;
 }
+
+
 /* .generalBtn1 {
 	color: var(--varyLightGray);
 } */

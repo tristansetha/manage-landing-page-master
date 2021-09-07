@@ -1,20 +1,22 @@
 .card {
   width: 375px;
-  height: 2649px;
-  /* border: 3px solid red; */
+  height: 2670px;
+  color: var(--veryDarkBlue);
 }
-/* ILLUSTRATION */
+/* HERO / ILLUSTRATION */
 .heroContainer {
   display: flex;
   justify-content: center;
-  height: 373px;
+  height: 14%;
   width: 100%;
+  /* border: 1px solid purple; */
 }
 
 .illustrationContainer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  width: 100%;
 }
 
 .illustrationContainer * {
@@ -24,48 +26,264 @@
 .illustration {
 }
 
+/* SUMMARY */
+
 .summaryContainer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 380px;
-  /* border: 3px solid red; */
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  /* border: 1px solid purple; */
 }
 
 .summaryInfoContainer {
-  /* border: 2px solid blue; */
-  /* padding: 0 26px 0 36px; */
-  line-height: 2.5rem;
+  /* padding: 0 26px 0 26px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 28px;
   text-align: center;
+  width: 100%;
+  /* border: 1px solid blue; */
 }
 
 .summaryInfoTitle {
   padding: 0;
-  font-size: 37px;
+  font-size: 40px;
   font-weight: 700;
-  /* border: 3px solid red; */
+	line-height: 50px;
+  /* border: 1px solid purple; */
 }
 
 .summaryInfo {
-  /* border: 3px solid red; */
-  padding: 10px 26px 26px 26px;
-	color: var(--darkGrayishBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 323px;
+  margin-top: 10px;
+  /* padding: 10px 26px 26px 26px; */
+  color: var(--darkGrayishBlue);
   font-size: 16px;
-	line-height: 1.7rem;
-
-
+  /* border: 1px solid purple; */
 }
 
 .buttonContainer {
-	display: flex;
-	justify-content: center;
-	/* border:5px solid pink; */
+  margin-top: 29px;
+  display: flex;
+  justify-content: center;
+  /* border:1px solid pink; */
 }
 
-/* #getStartedBtn {
-	color: pink;
-	background-color: var(--brightRed);
-	width: 1px;
-} */
+/* INFORMATION  */
 
-/* SUMMARY INFORMATION AND CALL TO ACTION */
+.informationContainer {
+  height: 34%;
+  /* border: 1px solid purple; */
+}
+
+.informationHeader {
+  /* border:1px solid purple; */
+}
+
+.informationHeaderTitle {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  line-height: 45px;
+  padding: 0;
+  /* border:1px solid purple; */
+}
+
+.informationHeaderSummary {
+  padding: 16px 26px 26px 26px;
+
+  text-align: center;
+  color: var(--darkGrayishBlue);
+  font-size: 14px;
+  line-height: 28px;
+  /* border:1px solid purple; */
+}
+
+.informationKeyServicesContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 17px 0 17px;
+  /* justify-content: center;
+	align-items: center; */
+  /* border: 1px solid red; */
+}
+
+.informatonServiceContainer {
+  width: 359px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.informatonServiceContainer:nth-child(n + 2){
+	margin-top: 47px;
+}
+
+.informationServiceHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  height: 39px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: var(--veryPaleRed);
+  border-radius: 25px 0 0 25px;
+
+  /* border: 1px solid green; */
+}
+
+.informationServiceNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 67px;
+  margin-right: 10px;
+  border-radius: 25px;
+  color: var(--varyLightGray);
+  background-color: var(--brightRed);
+  font-size: 16px;
+}
+
+.informationServiceSummary {
+  padding: 5px 0 0 0;
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--darkGrayishBlue);
+  /* border: 1px solid purple; */
+}
+
+/* TESTIMONIAL */
+.testimonialContainer {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  /* gap: 98px; */
+  align-items: center;
+  /* justify-content: center; */
+  height: 22%;
+  /* border: 5px solid purple; */
+}
+
+.testimonialTitle {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--veryDarkBlue);
+  /* border: 1px solid purple; */
+}
+
+.testimonialCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+  width: 340px;
+  height: 284px;
+	margin-top: 62px;
+	background-color: var(--varyLightGray);
+  
+  
+}
+
+.testimonialCardImageContainer {
+	height: 72px;
+	width: 72px;
+  /* border: 1px solid purple; */
+}
+.testimonialCardTitle {
+	margin-top: 24px;
+  /* border: 1px solid purple; */
+}
+.testimonialCardCopy {
+	margin-top: 19px;
+	width: 298px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 26px;
+	color: var(--darkGrayishBlue);
+  /* border: 1px solid purple; */
+}
+
+.testimonialNavigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	width: 43px;
+	height: 7px;
+	margin-top: 28px;
+  /* border: 1px solid purple; */
+}
+
+.dot {
+  margin: 0 5px 0 5px;
+  height: 7px;
+  width: 7px;
+  background-color: var(--veryPaleRed);
+  border-radius: 50%;
+	border: 3px solid var(--brightRed);
+  display: inline-block;
+}
+
+.testimonialButtonContainer {
+  display: flex;
+  justify-content: center;
+	margin-top: 47px;
+  /* border: 1px solid purple; */
+}
+
+.footerContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+  height: 15%;
+	text-align: center;
+	font-size: 40px;
+	line-height: 50px;
+
+	background-color: var(--brightRed);
+  /* border: 1px solid purple; */
+}
+
+
+
+.footerContentContainer {
+	/* display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; */
+	width: 312px;
+	height: 223px;
+	/* border: 1px solid purple; */
+
+}
+.footerContentTitle {
+	letter-spacing: -1px;
+	font-weight: 700;
+	color: white;
+	/* border: 1px solid purple; */
+}
+
+.footerButtonContainer{
+	display: flex;
+	justify-content: center;
+	margin-top: 29px;
+	/* border: 1px solid purple; */
+}
+.footerButtonContainer button {
+	color: var(--brightRed);
+	background-color: white;
+}

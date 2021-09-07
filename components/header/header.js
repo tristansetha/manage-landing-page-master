@@ -13,7 +13,7 @@ const header = ({ children, logo }) => {
 							src={logo}
 							className={styles.logo}
 							height={18}
-							width={109}
+							width={110}
 							alt="logo"
 						/>
 					</>
@@ -24,7 +24,6 @@ const header = ({ children, logo }) => {
 			</div>
 			<div className={styles.hamburgerContainer}>
 				<Image
-					priority
 					src={"/icon-hamburger.svg"}
 					className={styles.hamburger}
 					height={18}
