@@ -7,6 +7,7 @@
   --veryDarkBlue: hsl(233, 12%, 13%);
   --veryPaleRed: hsl(13, 100%, 96%);
   --varyLightGray: hsl(0, 0%, 98%);
+  --desktopSize: 1440px;
 }
 
 html,
@@ -16,26 +17,22 @@ body {
   line-height: 1.6;
   font-size: 18px;
   font-family: "Be Vietnam", sans-serif;
-	
 }
 
 * {
   box-sizing: border-box;
 }
 
-
-
 button {
-	height: 44px;
-	width: 137px;
-	border-radius: 125px;
-	border: none;
-	background-color: var(--brightRed);
-	color: var(--varyLightGray);
-	font-size: 13px;
-	cursor: pointer;
+  height: 44px;
+  width: 137px;
+  border-radius: 125px;
+  border: none;
+  background-color: var(--brightRed);
+  color: var(--varyLightGray);
+  font-size: 13px;
+  cursor: pointer;
 }
-
 
 /* .generalBtn1 {
 	color: var(--varyLightGray);
