@@ -12,7 +12,7 @@ export default function Home() {
   const [state, setState] = React.useState()
 
   testimonialCards = <>
-    <div className={styles.testimonialCard}>
+    {/* <div className={styles.testimonialCard}>
       <div className={styles.testimonialCardBackground}></div>
       <div className={styles.testimonialCardImageContainer}>
         <Image
@@ -25,7 +25,7 @@ export default function Home() {
       </div>
       <div className={styles.testimonialCardTitle}>All Bravo</div>
       <div className={styles.testimonialCardCopy}>“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</div>
-    </div>
+    </div> */}
     <div className={styles.testimonialCard}>
       <div className={styles.testimonialCardBackground}></div>
       <div className={styles.testimonialCardImageContainer}>

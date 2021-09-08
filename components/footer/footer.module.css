@@ -4,6 +4,7 @@
   justify-content: flex-start;
   align-items: center;
   height: 538px;
+  /* width: 100%; */
   width: 375px;
   background-color: #1d1e25;
 }
@@ -93,9 +94,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 375px;
   height: 405px;
-
   background-color: var(--brightRed);
 }
 
@@ -197,5 +197,6 @@
 
   .topFooterContainer {
     height: 220px;
+    width: 100%;
   }
 }

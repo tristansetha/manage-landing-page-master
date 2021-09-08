@@ -3,6 +3,7 @@
 
   height: 2265px;
   color: var(--veryDarkBlue);
+  overflow: hidden;
 }
 
 .cardElements1 {
@@ -252,6 +253,7 @@
 
 @media (min-width: 1440px) {
   .card {
+    overflow: visible;
     width: 1440px;
 
     height: 2069px;
