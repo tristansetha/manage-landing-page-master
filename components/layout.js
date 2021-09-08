@@ -8,22 +8,18 @@ export default function Layout({ children }) {
     <div
       className={styles.container}>
       <div className={styles.background}>
-
-
-
         <Header logo="/logo.svg">
-          <ul>
-            <li>Pricing</li>
-            <li>Product</li>
-            <li>About Us</li>
-            <li>Careers</li>
-            <li>Community</li>
-          </ul>
+          <div>Pricing</div>
+          <div>Product</div>
+          <div>About Us</div>
+          <div>Careers</div>
+          <div>Community</div>
         </Header>
         <main className={styles.mainContainer}>{children}</main>
-        <Footer logo="/logo-invert.svg">
-        </Footer>
       </div>
+
+      <Footer logo="/logo-invert.svg">
+      </Footer>
 
     </div>
   )

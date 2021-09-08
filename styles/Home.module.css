@@ -1,52 +1,57 @@
 .card {
   width: 375px;
-  height: 2670px;
+
+  height: 2265px;
   color: var(--veryDarkBlue);
 }
-/* HERO / ILLUSTRATION */
+
+.cardElements1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 34%;
+}
+
 .heroContainer {
   display: flex;
   justify-content: center;
-  height: 14%;
+  height: 51%;
   width: 100%;
-  /* border: 1px solid purple; */
 }
 
 .illustrationContainer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 100%;
+  height: 318px;
+  width: 373px;
+  margin-top: 48px;
 }
 
 .illustrationContainer * {
-  /* border: 1px solid red; */
 }
 
 .illustration {
 }
-
-/* SUMMARY */
 
 .summaryContainer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 15%;
+  height: 49%;
   width: 100%;
-  /* border: 1px solid purple; */
 }
 
 .summaryInfoContainer {
-  /* padding: 0 26px 0 26px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   line-height: 28px;
   text-align: center;
   width: 100%;
-  /* border: 1px solid blue; */
 }
 
 .summaryInfoTitle {
@@ -54,7 +59,7 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
-  /* border: 1px solid purple; */
+  letter-spacing: -1px;
 }
 
 .summaryInfo {
@@ -63,37 +68,31 @@
   align-items: center;
   width: 323px;
   margin-top: 10px;
-  /* padding: 10px 26px 26px 26px; */
   color: var(--darkGrayishBlue);
   font-size: 16px;
-  /* border: 1px solid purple; */
+  line-height: 28px;
 }
 
 .buttonContainer {
   margin-top: 29px;
   display: flex;
   justify-content: center;
-  /* border:1px solid pink; */
 }
 
-/* INFORMATION  */
-
 .informationContainer {
-  height: 34%;
-  /* border: 1px solid purple; */
+  height: 40%;
 }
 
 .informationHeader {
-  /* border:1px solid purple; */
 }
 
 .informationHeaderTitle {
+  padding: 0;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 30px;
   text-align: center;
   line-height: 45px;
-  padding: 0;
-  /* border:1px solid purple; */
+  letter-spacing: -0.62px;
 }
 
 .informationHeaderSummary {
@@ -103,16 +102,12 @@
   color: var(--darkGrayishBlue);
   font-size: 14px;
   line-height: 28px;
-  /* border:1px solid purple; */
 }
 
 .informationKeyServicesContainer {
   display: flex;
   flex-direction: column;
   padding: 0 17px 0 17px;
-  /* justify-content: center;
-	align-items: center; */
-  /* border: 1px solid red; */
 }
 
 .informatonServiceContainer {
@@ -121,7 +116,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid black; */
 }
 .informatonServiceContainer:nth-child(n + 2) {
   margin-top: 47px;
@@ -137,10 +131,9 @@
   width: 100%;
   font-weight: 700;
   font-size: 16px;
+  letter-spacing: -0.29px;
   background-color: var(--veryPaleRed);
   border-radius: 25px 0 0 25px;
-
-  /* border: 1px solid green; */
 }
 
 .informationServiceNumber {
@@ -149,11 +142,15 @@
   align-items: center;
   height: 100%;
   width: 67px;
-  margin-right: 10px;
+
   border-radius: 25px;
   color: var(--varyLightGray);
   background-color: var(--brightRed);
   font-size: 16px;
+}
+
+.informationServiceTitle {
+  margin-left: 15px;
 }
 
 .informationServiceSummary {
@@ -161,48 +158,63 @@
   font-size: 14px;
   line-height: 28px;
   color: var(--darkGrayishBlue);
-  /* border: 1px solid purple; */
 }
 
-/* TESTIMONIAL */
 .testimonialContainer {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
-  /* gap: 98px; */
   align-items: center;
-  /* justify-content: center; */
-  height: 22%;
-  /* border: 5px solid purple; */
+  height: 26%;
 }
 
 .testimonialTitle {
   font-size: 32px;
   font-weight: 700;
+  letter-spacing: -0.66px;
+  line-height: 45px;
   text-align: center;
   color: var(--veryDarkBlue);
-  /* border: 1px solid purple; */
+}
+
+.testimonialSlider {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 62px;
 }
 
 .testimonialCard {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 340px;
   height: 284px;
-  margin-top: 62px;
-  background-color: var(--varyLightGray);
+}
+
+.testimonialCardBackground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 85%;
+  z-index: -1;
+  background: linear-gradient(var(--varyLightGray), var(--varyLightGray));
+}
+
+.testimonialCard:not(:first-child) {
+  margin-left: 30px;
 }
 
 .testimonialCardImageContainer {
   height: 72px;
   width: 72px;
-  /* border: 1px solid purple; */
 }
 .testimonialCardTitle {
   margin-top: 24px;
-  /* border: 1px solid purple; */
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.29px;
 }
 .testimonialCardCopy {
   margin-top: 19px;
@@ -211,7 +223,6 @@
   text-align: center;
   line-height: 26px;
   color: var(--darkGrayishBlue);
-  /* border: 1px solid purple; */
 }
 
 .testimonialNavigation {
@@ -221,7 +232,6 @@
   width: 43px;
   height: 7px;
   margin-top: 28px;
-  /* border: 1px solid purple; */
 }
 
 .dot {
@@ -237,48 +247,154 @@
 .testimonialButtonContainer {
   display: flex;
   justify-content: center;
-  margin-top: 47px;
-  /* border: 1px solid purple; */
+  margin-top: 48px;
 }
 
-.footerContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media (min-width: 1440px) {
+  .card {
+    width: 1440px;
 
-  height: 15%;
-  text-align: center;
-  font-size: 40px;
-  line-height: 50px;
+    height: 2069px;
+  }
 
-  background-color: var(--brightRed);
-  /* border: 1px solid purple; */
-}
+  .cardElements1 {
+    position: relative;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 606px;
+    width: 100%;
+  }
 
-.footerContentContainer {
-  /* display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center; */
-  width: 312px;
-  height: 223px;
-  /* border: 1px solid purple; */
-}
-.footerContentTitle {
-  letter-spacing: -1px;
-  font-weight: 700;
-  color: white;
-  /* border: 1px solid purple; */
-}
+  .heroContainer {
+    justify-content: center;
+    height: 485px;
+    width: 540px;
+  }
 
-.footerButtonContainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 29px;
-  /* border: 1px solid purple; */
-}
-.footerButtonContainer button {
-  color: var(--brightRed);
-  background-color: white;
+  .illustrationContainer {
+    position: absolute;
+    top: 10px;
+    display: block;
+    width: 540px;
+    height: 485px;
+  }
+
+  .illustration {
+    width: 540px;
+  }
+  .summaryContainer {
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 388px;
+    width: 445px;
+  }
+
+  .summaryInfoContainer {
+    justify-content: space-between;
+    height: 304px;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .summaryInfoTitle {
+    letter-spacing: -1px;
+    font-size: 50px;
+    line-height: 64px;
+  }
+  .summaryInfo {
+    margin-top: 16px;
+    width: 350px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .buttonContainer {
+  }
+
+  .informationContainer {
+    height: 763px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .informationHeader {
+    height: 224px;
+    width: 445px;
+  }
+
+  .informationHeaderTitle {
+    text-align: left;
+  }
+
+  .informationHeaderTitle br {
+    display: none;
+  }
+
+  .informationHeaderSummary {
+    margin-right: 95px;
+
+    margin-top: 24px;
+    padding: 0;
+    text-align: left;
+  }
+
+  .informationKeyServicesContainer {
+    padding: 0;
+    width: 540px;
+    height: 536px;
+  }
+  .informatonServiceContainer {
+    position: relative;
+    padding: 0;
+
+    width: 100%;
+  }
+
+  .informationServiceHeader {
+    padding: 0;
+
+    width: 100%;
+    background: none;
+  }
+
+  .informationServiceNumber {
+    margin-right: 25px;
+    width: 67px;
+    height: 39px;
+  }
+
+  .informationServiceTitle {
+  }
+
+  .informationServiceSummary {
+    width: 82%;
+    padding: 0;
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 120px;
+  }
+
+  .testimonialContainer {
+    height: 700px;
+  }
+
+  .testimonialNavigation {
+    display: none;
+  }
+
+  .testimonialCard {
+    width: 540px;
+    height: 256px;
+  }
+
+  .testimonialCardCopy {
+    width: 460px;
+  }
+
+  .testimonialButtonContainer {
+  }
 }

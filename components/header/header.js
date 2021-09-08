@@ -22,6 +22,9 @@ const header = ({ children, logo }) => {
       <div className={styles.navContainer}>
         {children}
       </div>
+      <div className={styles.buttonContainer}>
+        <button>Get Started</button>
+      </div>
       <div className={styles.hamburgerContainer}>
         <Image
           src={"/icon-hamburger.svg"}

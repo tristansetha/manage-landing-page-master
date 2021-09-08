@@ -1,5 +1,4 @@
 .footerContainer {
-  /* color: var(--brightRed) */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -25,6 +24,7 @@
   width: 230px;
   height: 100%;
   font-size: 13px;
+  letter-spacing: -0.1px;
   border-radius: 25px;
   padding-left: 20px;
 }
@@ -35,7 +35,6 @@
 
 .searchContainer input::placeholder {
   color: var(--darkGrayishBlue);
-  /* padding-left: 24px; */
 }
 .linksContainer {
   display: flex;
@@ -45,7 +44,6 @@
   margin-top: 48px;
   width: 100%;
   color: white;
-  font-size: 14px;
   letter-spacing: -0.23px;
 }
 
@@ -56,34 +54,14 @@
   align-items: flex-start;
   gap: 10px;
   height: 100%;
+  font-size: 15px;
+  letter-spacing: -0.23px;
   text-align: start;
   font-weight: 400;
-
-  /* border: 1px solid yellow; */
 }
 
 .linkContainerRow div {
   cursor: pointer;
-}
-
-.linkContainerRow:first-child {
-  /* width: 63px;
-  height: 127px; */
-  /* border:1px solid white; */
-}
-
-.linkContainerRow:nth-child(2) {
-  /* width: 95px;
-  height: 92px; */
-  /* border:1px solid white; */
-}
-
-.linkContainerRow div:not(:first-child) {
-  /* margin-top: 13px; */
-}
-
-.linkContainerRow:nth-child(2) {
-  /* margin-left: 106px; */
 }
 
 .socialLinkContainer {
@@ -92,7 +70,6 @@
   width: 296px;
   height: 32px;
   margin-top: 45px;
-  /* border: 1px solid white; */
 }
 
 .socialIcon {
@@ -105,8 +82,120 @@
 
 .copyright {
   margin-top: 30px;
-  /* margin-bottom: 30px; */
+
   color: var(--darkGrayishBlue);
   font-size: 13px;
-  letter-spacing: 0.2px;
+  letter-spacing: -0.2px;
+}
+
+.topFooterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 405px;
+
+  background-color: var(--brightRed);
+}
+
+.topFooterContentContainer {
+  width: 312px;
+  height: 223px;
+}
+.topFooterContentTitle {
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -1px;
+  font-weight: 700;
+  text-align: center;
+
+  color: white;
+}
+
+.topFooterButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 29px;
+}
+.topFooterButtonContainer button {
+  color: var(--brightRed);
+  background-color: white;
+}
+
+@media (min-width: 1440px) {
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 23% 47% 30%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "logo links search"
+      "social links copyright";
+    min-height: 250px;
+    width: 100%;
+  }
+
+  .footerContainer > div {
+  }
+
+  .logoContainer {
+    grid-area: logo;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .linksContainer {
+    grid-area: links;
+    height: 100%;
+  }
+
+  .linkContainerRow {
+    gap: 13px;
+    justify-content: center;
+  }
+
+  .socialLinkContainer {
+    grid-area: social;
+    display: flex;
+    justify-content: flex-end;
+    gap: 13.33px;
+    width: 100%;
+  }
+  .socialIcon {
+    width: 20px;
+    height: 20px;
+  }
+  .searchContainer {
+    grid-area: search;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .copyright {
+    padding-left: 100px;
+    grid-area: copyright;
+    text-align: left;
+  }
+
+  .topFooterContentContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1440px;
+  }
+  .topFooterContentTitle {
+    width: 445px;
+    text-align: left;
+  }
+
+  .topFooterContentTitle br {
+    display: none;
+  }
+
+  .topFooterContainer {
+    height: 220px;
+  }
 }
