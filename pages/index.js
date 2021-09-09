@@ -4,11 +4,15 @@ import styles from '../styles/home.module.css'
 import Link from 'next/link'
 import Layout from '../components/layout'
 import React from 'react'
+import useToggle from "../hooks/useToggle"
+
 
 export default function Home() {
+  const [value, toggleValue] = useToggle(false)
+
 
   let testimonialCards
-  
+
 
   const [state, setState] = React.useState(0)
 
@@ -83,8 +87,6 @@ export default function Home() {
                 className={styles.illustration}
                 src="/illustration-intro.svg"
                 layout='fill'
-                height={318}
-                width={373}
               />
             </div>
           </div>

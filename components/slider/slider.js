@@ -1,9 +1,9 @@
 import React from 'react';
 
-const slider = () => {
+const slider = ({ children }) => {
   return (
     <div>
-      
+
     </div>
   );
 }
