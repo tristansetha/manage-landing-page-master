@@ -1,12 +1,22 @@
 .footerContainer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 538px;
   /* width: 100%; */
   width: 375px;
   background-color: #1d1e25;
+}
+
+.footerContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 538px;
+  /* width: 100%; */
+  width: 375px;
 }
 .searchContainer {
   display: flex;
@@ -65,6 +75,10 @@
   cursor: pointer;
 }
 
+.linkContainerRow div:hover {
+  color: var(--brightRed);
+}
+
 .socialLinkContainer {
   display: flex;
   justify-content: space-between;
@@ -75,6 +89,11 @@
 
 .socialIcon {
   cursor: pointer;
+}
+
+.socialIcon:hover {
+  filter: invert(40%) sepia(93%) saturate(1197%) hue-rotate(339deg)
+    brightness(99%) contrast(91%);
 }
 
 .logoContainer {
@@ -123,8 +142,26 @@
   background-color: white;
 }
 
+.topFooterButtonContainer button:hover {
+  color: #f98f75;
+}
+
 @media (min-width: 1440px) {
   .footerContainer {
+    display: flex;
+    justify-content: center;
+    /* display: grid;
+    grid-template-columns: 23% 47% 30%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "logo links search"
+      "social links copyright"; */
+    min-height: 250px;
+    width: 100%;
+  }
+
+  .footerContentContainer {
+    position: relative;
     display: grid;
     grid-template-columns: 23% 47% 30%;
     grid-template-rows: 50% 50%;
@@ -132,11 +169,12 @@
       "logo links search"
       "social links copyright";
     min-height: 250px;
-    width: 100%;
+    width: 1440px;
+    /* border: 1px solid white; */
   }
 
-  .footerContainer > div {
-  }
+  /* .footerContainer > div {
+  } */
 
   .logoContainer {
     grid-area: logo;
@@ -145,6 +183,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    /* border: 1px solid white; */
   }
 
   .linksContainer {
@@ -163,6 +202,7 @@
     justify-content: flex-end;
     gap: 13.33px;
     width: 100%;
+    margin-left: 10px;
   }
   .socialIcon {
     width: 20px;
@@ -182,13 +222,21 @@
 
   .topFooterContentContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 1440px;
+    /* border: 1px solid white; */
   }
   .topFooterContentTitle {
     width: 445px;
     text-align: left;
+    /* border: 1px solid white; */
+    margin-left: 190px;
+  }
+
+  .topFooterButtonContainer {
+    margin-right: 110px;
+    /* border: 1px solid white; */
   }
 
   .topFooterContentTitle br {

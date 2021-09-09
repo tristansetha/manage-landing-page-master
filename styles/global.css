@@ -31,7 +31,12 @@ button {
   background-color: var(--brightRed);
   color: var(--varyLightGray);
   font-size: 13px;
+  font-weight: 700;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #F98F75;
 }
 
 /* .generalBtn1 {

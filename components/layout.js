@@ -17,7 +17,6 @@ export default function Layout({ children }) {
         </Header>
         <main className={styles.mainContainer}>{children}</main>
       </div>
-
       <Footer logo="/logo-invert.svg">
       </Footer>
 

@@ -8,8 +8,9 @@ import React from 'react'
 export default function Home() {
 
   let testimonialCards
+  
 
-  const [state, setState] = React.useState()
+  const [state, setState] = React.useState(0)
 
   testimonialCards = <>
     {/* <div className={styles.testimonialCard}>
