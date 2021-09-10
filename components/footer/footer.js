@@ -1,7 +1,20 @@
 import Image from 'next/image'
+import { useState } from 'react'
 
 import styles from "./footer.module.css"
 const Footer = ({ logo }) => {
+
+  const [invalidEmail, setInvalidEmail] = useState(false)
+
+  const handleInvalidEmail = e => {
+    let regex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
+    if (!regex.test(e.target.value)) {
+      setInvalidEmail(true)
+    } else {
+      setInvalidEmail(false)
+    }
+  }
+
   return (
     <>
       <div className={styles.topFooterContainer}>
@@ -16,9 +29,12 @@ const Footer = ({ logo }) => {
       </div>
       <div className={styles.footerContainer}>
         <div className={styles.footerContentContainer}>
-          <div className={styles.searchContainer}>
-            <input type="text" placeholder="Updates in your inbox…" />
+          <div className={styles.emailContainer}>
+            <input style={{ border: `${invalidEmail ? "3px solid var(--brightRed)" : "none"}` }} onChange={handleInvalidEmail} type="text" placeholder="Updates in your inbox…" />
             <button>Go</button>
+            <p
+              style={{ display: `${invalidEmail ? "block" : "none"}` }}
+              className={styles.emailErrorMessage}>Please insert a valid email</p>
           </div>
           <div className={styles.linksContainer}>
             <div className={styles.linkContainerRow}>

@@ -18,20 +18,22 @@
 
   width: 375px;
 }
-.searchContainer {
-  display: flex;
-  justify-content: center;
+.emailContainer {
+  position: relative;
+  /* display: flex;
+  justify-content: center; */
   margin-top: 50px;
   height: 44px;
   width: 100%;
+  /* border: 1px solid white; */
 }
 
-.searchContainer button {
+.emailContainer button {
   width: 80px;
   height: 44px;
   margin-left: 8px;
 }
-.searchContainer input {
+.emailContainer input {
   width: 230px;
   height: 100%;
   font-size: 13px;
@@ -40,13 +42,21 @@
   padding-left: 20px;
 }
 
-.searchContainer input:focus {
+.emailContainer input:focus {
   outline: none;
 }
 
-.searchContainer input::placeholder {
+.emailContainer input::placeholder {
   color: var(--darkGrayishBlue);
 }
+
+.emailErrorMessage {
+  padding-left: 20px;
+  font-size: 10px;
+  font-style: italic;
+  color: var(--brightRed);
+}
+
 .linksContainer {
   display: flex;
   flex-direction: row;
@@ -197,7 +207,7 @@
     width: 20px;
     height: 20px;
   }
-  .searchContainer {
+  .emailContainer {
     grid-area: search;
     justify-content: flex-start;
     width: 100%;
