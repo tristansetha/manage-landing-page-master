@@ -45,18 +45,17 @@ export default function Slider({ testimonials }) {
 
   setTimeout(() => {
     handleClassChange()
-  }, 10000)
+  }, 8000)
 
-  if (translateX.count === tempTestimonials.length - 2) {
-    console.log("last!")
-    setTranslateX({
-      transition: 0,
-      pixels: 0,
-      count: 0
-    })
-  }
-
-
+  useEffect(() => {
+    if (translateX.count === tempTestimonials.length - 2) {
+      setTranslateX({
+        transition: 0,
+        pixels: 0,
+        count: 0
+      })
+    }
+  }), [translateX]
 
   return (
     <>
@@ -64,9 +63,10 @@ export default function Slider({ testimonials }) {
         <div className={styles.testimonialTitle}>
           What they’ve said
         </div>
-        <div 
-          style={{ 
-            transform: `translateX(${translateX.pixels}px)`, transition: `all ${translateX.transition}s` }}
+        <div
+          style={{
+            transform: `translateX(${translateX.pixels}px)`, transition: `all ${translateX.transition}s`
+          }}
           className={styles.testimonialSlider}>
           {tempTestimonials.map((element, index) => (
             <Slide
