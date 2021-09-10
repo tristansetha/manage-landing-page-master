@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from '../styles/home.module.css'
 import Layout from '../components/layout'
 import Slider from '../components/slider/slider'
-import { testimonialData } from './testimonials'
+import { testimonialData } from '../components/slider/testimonials'
 
 export default function Home() {
 
