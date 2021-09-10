@@ -25,37 +25,42 @@ export const Slide = ({ src, title, testimonial }) => {
 
 export default function Slider({ testimonials }) {
   let tempTestimonials = testimonials
-
   const [translateX, setTranslateX] = useState({
     pixels: 0,
     count: 0,
     transition: 1
   })
 
-
-
   const handleClassChange = () => {
-    setTranslateX({
-      transition: 1,
-      count: translateX.count + 1,
-      pixels: translateX.pixels + 570
-    })
-
-  }
-
-  setTimeout(() => {
-    handleClassChange()
-  }, 8000)
-
-  useEffect(() => {
-    if (translateX.count === tempTestimonials.length - 2) {
+    if (translateX.count === tempTestimonials.length - 3) {
       setTranslateX({
         transition: 0,
         pixels: 0,
         count: 0
       })
+    } else {
+      setTranslateX({
+        transition: 1,
+        count: translateX.count + 1,
+        pixels: translateX.pixels + 570
+      })
     }
-  }), [translateX]
+  }
+
+  setTimeout(() => {
+    handleClassChange()
+    console.log(translateX)
+  }, 2000)
+
+  // useEffect(() => {
+  //   if (translateX.count === tempTestimonials.length - 2) {
+  //     setTranslateX({
+  //       transition: 0,
+  //       pixels: 0,
+  //       count: 0
+  //     })
+  //   }
+  // }), [translateX]
 
   return (
     <>
