@@ -58,7 +58,6 @@ const Slider = ({ testimonials }) => {
     }
 
     setTimeout(() => {
-      console.log("trigger")
       handleTranslate()
     }, 6000)
     return (

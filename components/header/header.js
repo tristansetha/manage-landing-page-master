@@ -23,9 +23,6 @@ const Modal = ({ headerItems, active }) => {
 
 const Header = ({ headerItems, logo }) => {
   const [value, toggleValue] = useToggle(false)
-  useEffect(() => {
-    console.log(value)
-  }, [value])
   const handleOnClick = (value) => {
     toggleValue(value)
   }
