@@ -1,18 +1,11 @@
-// import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/home.module.css'
-// import Link from 'next/link'
 import Layout from '../components/layout'
 import Slider from '../components/slider/slider'
-// import React, { useEffect, useState } from 'react'
 import { testimonialData } from './testimonials'
 
 export default function Home() {
-
-  // let testimonialCards
-
-  // const [state, setState] = useState(0)
-
+  
   return (
     <Layout>
       <section className={styles.card}>

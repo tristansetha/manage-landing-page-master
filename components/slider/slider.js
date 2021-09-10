@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './slider.module.css'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import useMediaQuery from '../../hooks/useMediaQuery'
 
 const Slide = ({ src, title, testimonial }) => {
@@ -24,11 +24,9 @@ const Slide = ({ src, title, testimonial }) => {
   )
 }
 
-export default function Slider({ testimonials }) {
-
+const Slider = ({ testimonials }) => {
   const isBreakpoint = useMediaQuery(1440)
   let tempTestimonials = testimonials
-
 
   const [slideIndex, setSlideIndex] = useState({
     pixels: 0,
@@ -165,3 +163,4 @@ export default function Slider({ testimonials }) {
 
 }
 
+export default Slider;

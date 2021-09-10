@@ -15,7 +15,6 @@ export default function useMediaQuery(width) {
     const media = window.matchMedia(`(max-width: ${width}px)`);
     media.addListener(updateTarget);
 
-    // Check on mount (callback is not called until a change occurs)
     if (media.matches) {
       setTargetReached(true);
     }

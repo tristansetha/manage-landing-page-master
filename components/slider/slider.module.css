@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   height: 26%;
-  /* border: 3px solid red; */
-  /* overflow: hidden; */
+
+  overflow: hidden;
 }
 
 .testimonialTitle {
@@ -14,13 +14,11 @@
   line-height: 45px;
   text-align: center;
   color: var(--veryDarkBlue);
-  /* border: 3px solid black; */
 }
 
 .testimonialSlider {
   display: flex;
   flex-direction: row;
-  /* border: 3px solid black; */
   margin-top: 62px;
 }
 

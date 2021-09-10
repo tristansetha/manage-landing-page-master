@@ -161,96 +161,6 @@
   color: var(--darkGrayishBlue);
 }
 
-/* .testimonialContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 26%;
-}
-
-.testimonialTitle {
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: -0.66px;
-  line-height: 45px;
-  text-align: center;
-  color: var(--veryDarkBlue);
-}
-
-.testimonialSlider {
-  display: flex;
-  flex-direction: row;
-
-  margin-top: 62px;
-}
-
-.testimonialCard {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 340px;
-  height: 284px;
-}
-
-.testimonialCardBackground {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 85%;
-  z-index: -1;
-  background: linear-gradient(var(--varyLightGray), var(--varyLightGray));
-}
-
-.testimonialCard:not(:first-child) {
-  margin-left: 30px;
-}
-
-.testimonialCardImageContainer {
-  height: 72px;
-  width: 72px;
-}
-.testimonialCardTitle {
-  margin-top: 24px;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: -0.29px;
-}
-.testimonialCardCopy {
-  margin-top: 19px;
-  width: 298px;
-  font-size: 14px;
-  text-align: center;
-  line-height: 26px;
-  color: var(--darkGrayishBlue);
-}
-
-.testimonialNavigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 43px;
-  height: 7px;
-  margin-top: 28px;
-}
-
-.dot {
-  margin: 0 5px 0 5px;
-  height: 7px;
-  width: 7px;
-  background-color: var(--veryPaleRed);
-  border-radius: 50%;
-  border: 3px solid var(--brightRed);
-  display: inline-block;
-}
-
-.testimonialButtonContainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 48px;
-} */
-
 @media (min-width: 1440px) {
   .card {
     overflow: visible;
@@ -368,9 +278,6 @@
     height: 39px;
   }
 
-  .informationServiceTitle {
-  }
-
   .informationServiceSummary {
     width: 82%;
     padding: 0;
@@ -378,24 +285,4 @@
     line-height: 26px;
     margin-left: 120px;
   }
-
-  /* .testimonialContainer {
-    height: 700px;
-  }
-
-  .testimonialNavigation {
-    display: none;
-  }
-
-  .testimonialCard {
-    width: 540px;
-    height: 256px;
-  }
-
-  .testimonialCardCopy {
-    width: 460px;
-  }
-
-  .testimonialButtonContainer {
-  } */
 }

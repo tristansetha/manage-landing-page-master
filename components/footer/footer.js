@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import styles from "./footer.module.css"
-const footer = ({ logo }) => {
+const Footer = ({ logo }) => {
   return (
     <>
       <div className={styles.topFooterContainer}>
@@ -12,7 +12,6 @@ const footer = ({ logo }) => {
               Get Started
             </button>
           </div>
-
         </div>
       </div>
       <div className={styles.footerContainer}>
@@ -33,8 +32,6 @@ const footer = ({ logo }) => {
               <div>Community</div>
               <div>Privacy Policy</div>
             </div>
-
-
           </div>
           <div className={styles.socialLinkContainer}>
             <div className={styles.socialIcon}>
@@ -91,7 +88,6 @@ const footer = ({ logo }) => {
               width={154}
               alt="logo"
               layout="fixed"
-
             />
           </div>
           <div className={styles.copyright}>
@@ -104,4 +100,4 @@ const footer = ({ logo }) => {
   );
 }
 
-export default footer;
+export default Footer;
