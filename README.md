@@ -67,5 +67,6 @@ tristansetha@gmail.com
 
 ## Acknowledgments
 
-- jrgarciadev's media query hook [next.js/discussions/14810)](https://github.com/vercel/next.js/discussions/14810)
+- jrgarciadev's useMediaQuery hook [next.js/discussions/14810](https://github.com/vercel/next.js/discussions/14810)
+- webdev simplified's useToggle hook [useful-custom-react-hooks](https://github.com/WebDevSimplified/useful-custom-react-hooks)
 
