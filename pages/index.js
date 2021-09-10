@@ -1,80 +1,17 @@
-import Head from 'next/head'
+// import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/home.module.css'
-import Link from 'next/link'
+// import Link from 'next/link'
 import Layout from '../components/layout'
-import React from 'react'
-import useToggle from "../hooks/useToggle"
-
+import Slider from '../components/slider/slider'
+// import React, { useEffect, useState } from 'react'
+import { testimonialData } from './testimonials'
 
 export default function Home() {
-  const [value, toggleValue] = useToggle(false)
 
+  // let testimonialCards
 
-  let testimonialCards
-
-
-  const [state, setState] = React.useState(0)
-
-  testimonialCards = <>
-    {/* <div className={styles.testimonialCard}>
-      <div className={styles.testimonialCardBackground}></div>
-      <div className={styles.testimonialCardImageContainer}>
-        <Image
-          className={styles.testimonialCardImage}
-          src="/avatar-ali.png"
-          layout='fixed'
-          height={72}
-          width={72}
-        />
-      </div>
-      <div className={styles.testimonialCardTitle}>All Bravo</div>
-      <div className={styles.testimonialCardCopy}>“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</div>
-    </div> */}
-    <div className={styles.testimonialCard}>
-      <div className={styles.testimonialCardBackground}></div>
-      <div className={styles.testimonialCardImageContainer}>
-        <Image
-          className={styles.testimonialCardImage}
-          src="/avatar-anisha.png"
-          layout='fixed'
-          height={72}
-          width={72}
-        />
-      </div>
-      <div className={styles.testimonialCardTitle}>All Bravo</div>
-      <div className={styles.testimonialCardCopy}>“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</div>
-    </div>
-    <div className={styles.testimonialCard}>
-      <div className={styles.testimonialCardBackground}></div>
-      <div className={styles.testimonialCardImageContainer}>
-        <Image
-          className={styles.testimonialCardImage}
-          src="/avatar-richard.png"
-          layout='fixed'
-          height={72}
-          width={72}
-        />
-      </div>
-      <div className={styles.testimonialCardTitle}>All Bravo</div>
-      <div className={styles.testimonialCardCopy}>“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</div>
-    </div>
-    <div className={styles.testimonialCard}>
-      <div className={styles.testimonialCardBackground}></div>
-      <div className={styles.testimonialCardImageContainer}>
-        <Image
-          className={styles.testimonialCardImage}
-          src="/avatar-shanai.png"
-          layout='fixed'
-          height={72}
-          width={72}
-        />
-      </div>
-      <div className={styles.testimonialCardTitle}>All Bravo</div>
-      <div className={styles.testimonialCardCopy}>“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</div>
-    </div>
-  </>;
-
+  // const [state, setState] = useState(0)
 
   return (
     <Layout>
@@ -154,7 +91,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={styles.testimonialContainer}>
+        <Slider testimonials={testimonialData} />
+        {/* <div className={styles.testimonialContainer}>
           <div className={styles.testimonialTitle}>
             What they’ve said
           </div>
@@ -171,7 +109,7 @@ export default function Home() {
           <div className={styles.testimonialButtonContainer}>
             <button>Get Started</button>
           </div>
-        </div>
+        </div> */}
       </section>
     </Layout>
 
