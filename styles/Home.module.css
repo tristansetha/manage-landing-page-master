@@ -29,9 +29,6 @@
   margin-top: 48px;
 }
 
-.illustrationContainer * {
-}
-
 .illustration {
 }
 
@@ -80,9 +77,6 @@
 
 .informationContainer {
   height: 40%;
-}
-
-.informationHeader {
 }
 
 .informationHeaderTitle {
@@ -216,9 +210,6 @@
     width: 350px;
     font-size: 16px;
     line-height: 26px;
-  }
-
-  .buttonContainer {
   }
 
   .informationContainer {
