@@ -95,7 +95,6 @@ const Slider = ({ testimonials }) => {
     // MOBILE
   } else {
     const handleSlideIndex = index => (e) => {
-      console.log(index)
       if (index === 0) {
         setSlideIndex({
           ...slideIndex,
