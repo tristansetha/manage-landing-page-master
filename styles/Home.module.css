@@ -1,9 +1,7 @@
 .card {
   width: 375px;
-
   height: 2265px;
   color: var(--veryDarkBlue);
-  overflow: hidden;
 }
 
 .cardElements1 {

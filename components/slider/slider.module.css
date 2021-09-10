@@ -93,8 +93,9 @@
 @media (min-width: 1440px) {
   .testimonialContainer {
     position: relative;
-
     height: 700px;
+    overflow:hidden;
+
   }
 
   .testimonialSlider {

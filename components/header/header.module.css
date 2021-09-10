@@ -106,4 +106,8 @@
   .navContainer div:not(:first-child) {
     margin-left: 32px;
   }
+
+  .navModalContainer.active {
+    display: none;
+  }
 }

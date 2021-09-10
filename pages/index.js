@@ -5,7 +5,7 @@ import Slider from '../components/slider/slider'
 import { testimonialData } from './testimonials'
 
 export default function Home() {
-  
+
   return (
     <Layout>
       <section className={styles.card}>
@@ -85,24 +85,6 @@ export default function Home() {
           </div>
         </div>
         <Slider testimonials={testimonialData} />
-        {/* <div className={styles.testimonialContainer}>
-          <div className={styles.testimonialTitle}>
-            What they’ve said
-          </div>
-          <div className={styles.testimonialSlider}>
-            {testimonialCards}
-
-          </div>
-          <div className={styles.testimonialNavigation}>
-            <span className={styles.dot}></span>
-            <span className={styles.dot}></span>
-            <span className={styles.dot}></span>
-            <span className={styles.dot}></span>
-          </div>
-          <div className={styles.testimonialButtonContainer}>
-            <button>Get Started</button>
-          </div>
-        </div> */}
       </section>
     </Layout>
 
