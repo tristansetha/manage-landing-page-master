@@ -54,7 +54,7 @@ mobile-1    | mobile-2 |  desktop
 
 ### What I learned
 
-Next.js, CSS modules, Webpack
+Next.js, CSS modules
 
 ### Continued development
 
