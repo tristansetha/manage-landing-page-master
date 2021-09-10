@@ -38,7 +38,7 @@ mobile-1    | mobile-2 |  desktop
 
 ### Links
 
-- Live Site URL: [Site Link](https://manage-landing-page-master-6lk0vrt4t-tristansetha.vercel.app/)
+- Live Site URL: [Site Link](https://manage-landing-page-master-h4bjrghbe-tristansetha.vercel.app/)
 
 ## My process
 
