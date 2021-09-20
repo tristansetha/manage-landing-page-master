@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import styled from "@emotion/styled";
+import { mediaQueries, breakpoints } from "@/utils/mediaQueries";
 
 const TestimonialContainer = styled.div`
   display: flex;
@@ -9,12 +10,15 @@ const TestimonialContainer = styled.div`
   align-items: center;
   height: 26%;
   overflow: hidden;
-  @media (min-width: 1440px) {
+
+  ${mediaQueries("md")`
+    width: 100%;
     position: relative;
     height: 700px;
     overflow: hidden;
-  }
+  `}
 `;
+
 const TestimonialTitle = styled.div`
   font-size: 32px;
   font-weight: 700;
@@ -22,18 +26,17 @@ const TestimonialTitle = styled.div`
   line-height: 45px;
   text-align: center;
   color: var(--veryDarkBlue);
-  @media (min-width: 1440px) {
-  }
 `;
 const TestimonialSlider = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 62px;
-  @media (min-width: 1440px) {
+
+  ${mediaQueries("md")`
     position: absolute;
     top: 158px;
     right: -120px;
-  }
+  `}
 `;
 
 const TestimonialCard = styled.div`
@@ -44,13 +47,14 @@ const TestimonialCard = styled.div`
   align-items: center;
   width: 340px;
   height: 284px;
-  :not(::first-of-type) {
+  :not(:first-of-type) {
     margin-left: 30px;
   }
-  @media (min-width: 1440px) {
+
+  ${mediaQueries("md")`
     width: 540px;
     height: 256px;
-  }
+  `}
 `;
 const TestimonialCardBackground = styled.div`
   position: absolute;
@@ -59,22 +63,16 @@ const TestimonialCardBackground = styled.div`
   height: 85%;
   z-index: -1;
   background: linear-gradient(var(--varyLightGray), var(--varyLightGray));
-  @media (min-width: 1440px) {
-  }
 `;
 const TestimonialCardImageContainer = styled.div`
   height: 72px;
   width: 72px;
-  @media (min-width: 1440px) {
-  }
 `;
 const TestimonialCardTitle = styled.div`
   margin-top: 24px;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.29px;
-  @media (min-width: 1440px) {
-  }
 `;
 const TestimonialCardCopy = styled.div`
   margin-top: 19px;
@@ -83,9 +81,10 @@ const TestimonialCardCopy = styled.div`
   text-align: center;
   line-height: 26px;
   color: var(--darkGrayishBlue);
-  @media (min-width: 1440px) {
+
+  ${mediaQueries("md")`
     width: 460px;
-  }
+  `}
 `;
 const TestimonialNavigation = styled.div`
   display: flex;
@@ -94,9 +93,10 @@ const TestimonialNavigation = styled.div`
   width: 43px;
   height: 7px;
   margin-top: 28px;
-  @media (min-width: 1440px) {
+
+  ${mediaQueries("md")`
     display: none;
-  }
+  `}
 `;
 
 const Dot = styled.span`
@@ -108,18 +108,15 @@ const Dot = styled.span`
   border: 4px solid var(--brightRed);
   display: inline-block;
   cursor: pointer;
-  @media (min-width: 1440px) {
-  }
 `;
 const TestimonialButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 48px;
-  @media (min-width: 1440px) {
-  }
 `;
 
 const Slide = ({ src, title, testimonial }) => {
+  console.log(testimonial);
   return (
     <>
       <TestimonialCard>
@@ -135,7 +132,10 @@ const Slide = ({ src, title, testimonial }) => {
 };
 
 const Slider = ({ testimonials }) => {
-  const isBreakpoint = useMediaQuery(1440);
+  const isBreakpoint = useMediaQuery(breakpoints.md);
+  useEffect(() => {
+    console.log(isBreakpoint);
+  }, [isBreakpoint]);
   let tempTestimonials = testimonials;
 
   const [slideIndex, setSlideIndex] = useState({
@@ -170,6 +170,7 @@ const Slider = ({ testimonials }) => {
     setTimeout(() => {
       handleTranslate();
     }, 6000);
+
     return (
       <>
         <TestimonialContainer>
@@ -242,7 +243,12 @@ const Slider = ({ testimonials }) => {
             }}
           >
             {tempTestimonials.map((element, index) => (
-              <Slide key={index} src={element.src} title={element.title} />
+              <Slide
+                key={index}
+                src={element.src}
+                title={element.title}
+                testimonial={element.testimonial}
+              />
             ))}
           </TestimonialSlider>
           <TestimonialNavigation>

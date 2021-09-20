@@ -2,29 +2,30 @@ import Image from "next/image";
 import Link from "next/link";
 import useToggle from "@/hooks/useToggle";
 import styled from "@emotion/styled";
+import { mediaQueries } from "@/utils/mediaQueries";
 
 const HeaderContainer = styled.header`
   position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  width: 375px;
+  width: 100%;
   height: 59px;
   padding: 0 24px 0 0;
-  @media (min-width: 1440px) {
+  ${mediaQueries("md")`
     display: flex;
     justify-content: center;
     width: 1440px;
     height: 100px;
-  }
+  `}
 `;
 
 const HamburgerContainer = styled.div`
   cursor: pointer;
   display: flex;
-  @media (min-width: 1440px) {
+  ${mediaQueries("md")`
     display: none;
-  }
+  `}
 `;
 
 const LogoContainer = styled.div`
@@ -33,10 +34,10 @@ const LogoContainer = styled.div`
   bottom: -7px;
   display: flex;
   cursor: pointer;
-  @media (min-width: 1440px) {
+  ${mediaQueries("md")`
     left: 190px;
     bottom: 0px;
-  }
+  `}
 `;
 const NavContainer = styled.div`
   display: none;
@@ -44,12 +45,10 @@ const NavContainer = styled.div`
   div {
     cursor: pointer;
   }
-
   div:hover {
     color: var(--darkGrayishBlue);
   }
-
-  @media (min-width: 1440px) {
+  ${mediaQueries("md")`
     display: flex;
     flex-direction: row;
     height: 19px;
@@ -58,21 +57,22 @@ const NavContainer = styled.div`
     div:not(:first-child) {
       margin-left: 32px;
     }
-  }
+  `}
 `;
 const ButtonContainer = styled.div`
   display: none;
-  @media (min-width: 1440px) {
+
+  ${mediaQueries("md")`
     position: absolute;
     right: 165px;
     display: block;
-  }
+  `}
 `;
 const NavModalContainer = styled.div`
   position: absolute;
   top: 110px;
   z-index: 1;
-  width: 330px;
+  width: 88%;
   height: 291px;
   display: ${(props) => (props.active ? "flex" : "none")};
   flex-direction: column;
@@ -87,9 +87,10 @@ const NavModalContainer = styled.div`
     text-decoration: none;
     color: black;
   }
-  @media (min-width: 1440px) {
+
+  ${mediaQueries("md")`
     display: none;
-  }
+  `}
 `;
 
 const Header = ({ headerItems, logo }) => {
