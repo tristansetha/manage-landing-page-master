@@ -116,7 +116,6 @@ const TestimonialButtonContainer = styled.div`
 `;
 
 const Slide = ({ src, title, testimonial }) => {
-  console.log(testimonial);
   return (
     <>
       <TestimonialCard>
@@ -134,7 +133,6 @@ const Slide = ({ src, title, testimonial }) => {
 const Slider = ({ testimonials }) => {
   const isBreakpoint = useMediaQuery(breakpoints.md);
   useEffect(() => {
-    console.log(isBreakpoint);
   }, [isBreakpoint]);
   let tempTestimonials = testimonials;
 

@@ -14,11 +14,7 @@ const Container = styled.div`
     display: flex;
     height: 2639px;
     width: 100%;
-  `}/* @media (min-width: 1440px) {
-    display: flex;
-    height: 2639px;
-    width: 100%;
-  } */
+  `}
 `;
 
 const Background = styled.div`
@@ -42,30 +38,15 @@ const Background = styled.div`
     background-repeat: no-repeat;
     background-size: 475px, 350px;
     background-position: 100% -100px, 240px 500px;
-  `}/* @media (min-width: 1440px) {
-    height: 2639px;
-    width: 1440px;
-    background-image: url("/bg-tablet-pattern.svg"),
-      url("/bg-tablet-pattern.svg");
-    background-repeat: repeat-y;
-    background-repeat: no-repeat;
-    background-size: 475px, 350px;
-    background-position: 100% -100px, 240px 500px;
-  } */
+  `}
 `;
 
 const MainContainer = styled.main`
   width: 100%;
-
-  /* border: 5px solid blue; */
-
   ${mediaQueries("md")`
     display: flex;
     justify-content: center;
-  `}/* @media (min-width: 1440px) {
-    display: flex;
-    justify-content: center;
-  } */
+  `}
 `;
 
 export default function Layout({ children }) {

@@ -10,8 +10,6 @@ export const FooterContainer = styled.div`
   width: 100%;
   background-color: #1d1e25;
 
-  border: 3px solid purple;
-
   ${mediaQueries("md")`
     display: flex;
     justify-content: center;
@@ -25,10 +23,7 @@ export const FooterContentContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   height: 538px;
-
   width: 100%;
-
-  border: 3px solid purple;
 
   ${mediaQueries("md")`
     position: relative;

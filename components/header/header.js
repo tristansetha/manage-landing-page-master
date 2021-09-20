@@ -54,7 +54,7 @@ const NavContainer = styled.div`
     height: 19px;
     font-size: 13px;
     text-align: center;
-    div:not(:first-child) {
+    div:not(:first-of-type) {
       margin-left: 32px;
     }
   `}
@@ -110,14 +110,14 @@ const Header = ({ headerItems, logo }) => {
       </LogoContainer>
       <NavContainer>
         {headerItems.map((element, index) => (
-          <Link href={element.href}>
+          <Link key={index} href={element.href}>
             <div>{element.name}</div>
           </Link>
         ))}
       </NavContainer>
       <NavModalContainer active={value} headerItems={headerItems}>
         {headerItems.map((element, index) => (
-          <div>
+          <div key={index}>
             <a href={element.href}>{element.name}</a>
           </div>
         ))}
