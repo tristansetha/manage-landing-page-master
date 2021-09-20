@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect } from "react";
 
 export default function useMediaQuery(width) {
   const [targetReached, setTargetReached] = useState(false);
@@ -23,5 +23,4 @@ export default function useMediaQuery(width) {
   }, []);
 
   return targetReached;
-};
-
+}

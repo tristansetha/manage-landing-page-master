@@ -1,6 +1,6 @@
 # Frontend Mentor - Manage landing page solution
 
-This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -31,10 +31,9 @@ Users should be able to:
 
 ### Screenshot
 
-mobile-1    | mobile-2 |  desktop                   
-:-------------------------:|:---:|:-------------------------:
-![mobile-ss](screenshot-mobile2.png)| ![mobile-ss](screenshot-mobile.png)|  ![mobile-ss](screenshot-desktop.png)
-
+|               mobile-1               |              mobile-2               |               desktop                |
+| :----------------------------------: | :---------------------------------: | :----------------------------------: |
+| ![mobile-ss](screenshot-mobile2.png) | ![mobile-ss](screenshot-mobile.png) | ![mobile-ss](screenshot-desktop.png) |
 
 ### Links
 
@@ -51,7 +50,6 @@ mobile-1    | mobile-2 |  desktop
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
 
-
 ### What I learned
 
 Next.js, CSS modules
@@ -64,9 +62,7 @@ Next.js, architecture, module bundlers, testing
 
 tristansetha@gmail.com
 
-
 ## Acknowledgments
 
 - jrgarciadev's useMediaQuery hook [next.js/discussions/14810](https://github.com/vercel/next.js/discussions/14810)
 - webdev simplified's useToggle hook [useful-custom-react-hooks](https://github.com/WebDevSimplified/useful-custom-react-hooks)
-
