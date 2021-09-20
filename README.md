@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Site Link](https://manage-landing-page-master-74c0w8b9q-tristansetha.vercel.app/)
+- Live Site URL: [Site Link](https://manage-landing-page-master-azure.vercel.app/)
 
 ## My process
 
