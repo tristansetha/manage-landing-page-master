@@ -1,92 +1,112 @@
-import Image from 'next/image'
-import styles from '../styles/home.module.css'
-import Layout from '../components/layout'
-import Slider from '../components/slider/slider'
-import { testimonialData } from '../components/slider/testimonials'
+import Image from "next/image";
+import Layout from "@/components/layout";
+import Slider from "@/components/slider/slider";
+import { testimonialData } from "@/components/slider/testimonials";
+
+import {
+  Card,
+  CardElements1,
+  HeroContainer,
+  IllustrationContainer,
+  SummaryContainer,
+  SummaryInfoContainer,
+  SummaryInfoTitle,
+  SummaryInfo,
+  ButtonContainer,
+  InformationContainer,
+  InformationHeader,
+  InformationHeaderTitle,
+  InformationHeaderSummary,
+  InformationKeyServicesContainer,
+  InformationServiceContainer,
+  InformationServiceHeader,
+  InformationServiceNumber,
+  InformationServiceTitle,
+  InformationServiceSummary,
+} from "../styles/homeStyles";
 
 export default function Home() {
-
   return (
     <Layout>
-      <section className={styles.card}>
-        <div className={styles.cardElements1}>
-
-          <div className={styles.heroContainer}>
-            <div className={styles.illustrationContainer}>
-              <Image
-                className={styles.illustration}
-                src="/illustration-intro.svg"
-                layout='fill'
-              />
-            </div>
-          </div>
-          <div className={styles.summaryContainer}>
-            <div className={styles.summaryInfoContainer}>
-              <div className={styles.summaryInfoTitle}>
+      <Card>
+        <CardElements1>
+          <HeroContainer>
+            <IllustrationContainer>
+              <Image src="/illustration-intro.svg" layout="fill" />
+            </IllustrationContainer>
+          </HeroContainer>
+          <SummaryContainer>
+            <SummaryInfoContainer>
+              <SummaryInfoTitle>
                 Bring everyone together to build better products.
-              </div>
-
-              <div className={styles.summaryInfo}>
+              </SummaryInfoTitle>
+              <SummaryInfo>
                 Manage makes it simple for software teams to plan day-to-day
-                tasks while keeping the larger team goals in view.</div>
-            </div>
-            <div className={styles.buttonContainer}>
-              <button className={styles.generalBtn1}>
-                Get Started
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className={styles.cardElements2}>
-        </div>
-        <div className={styles.informationContainer}>
-          <div className={styles.informationHeader}>
-            <div className={styles.informationHeaderTitle}>
-              What’s different<br /> about Manage?
-            </div>
-            <div className={styles.informationHeaderSummary}>
-              Manage provides all the functionality your<br /> team needs, without
-              the complexity. Our software is tailor-made for modern digital
-              product teams.
-            </div>
-
-          </div>
-          <div className={styles.informationKeyServicesContainer}>
-            <div className={styles.informatonServiceContainer}>
-              <div className={styles.informationServiceHeader}>
-                <div className={styles.informationServiceNumber}>01</div><div className={styles.informationServiceTitle}>Track company-wide progress</div>
-              </div>
-              <div className={styles.informationServiceSummary}>
+                tasks while keeping the larger team goals in view.
+              </SummaryInfo>
+            </SummaryInfoContainer>
+            <ButtonContainer>
+              <button>Get Started</button>
+            </ButtonContainer>
+          </SummaryContainer>
+        </CardElements1>
+        <InformationContainer>
+          <InformationHeader>
+            <InformationHeaderTitle>
+              What’s different
+              <br /> about Manage?
+            </InformationHeaderTitle>
+            <InformationHeaderSummary>
+              Manage provides all the functionality your
+              <br /> team needs, without the complexity. Our software is
+              tailor-made for modern digital product teams.
+            </InformationHeaderSummary>
+          </InformationHeader>
+          <InformationKeyServicesContainer>
+            <InformationServiceContainer>
+              <InformationServiceHeader>
+                <InformationServiceNumber>01</InformationServiceNumber>
+                <InformationServiceTitle>
+                  Track company-wide progress
+                </InformationServiceTitle>
+              </InformationServiceHeader>
+              <InformationServiceSummary>
                 See how your day-to-day tasks fit into the wider vision. Go from
                 tracking progress at the milestone level all the way done to the
-                smallest of details. Never lose sight of the bigger picture again.</div>
-            </div>
-            <div className={styles.informatonServiceContainer}>
-              <div className={styles.informationServiceHeader}>
-                <div className={styles.informationServiceNumber}>02</div><div className={styles.informationServiceTitle}>Advanced built-in reports</div>
-              </div>
-              <div className={styles.informationServiceSummary}>
-                Set internal delivery estimates and track progress toward company
-                goals. Our customisable dashboard helps you build out the reports
-                you need to keep key stakeholders informed.
-              </div>
-
-            </div>
-            <div className={styles.informatonServiceContainer}>
-              <div className={styles.informationServiceHeader}>
-                <div className={styles.informationServiceNumber}>03</div><div className={styles.informationServiceTitle}>Everything you need in one place</div>
-              </div>
-              <div className={styles.informationServiceSummary}>
-                Stop jumping from one service to another to communicate, store files,
-                track tasks and share documents. Manage offers an all-in-one team
-                productivity solution.
-              </div>
-            </div>
-          </div>
-        </div>
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </InformationServiceSummary>
+            </InformationServiceContainer>
+            <InformationServiceContainer>
+              <InformationServiceHeader>
+                <InformationServiceNumber>02</InformationServiceNumber>
+                <InformationServiceTitle>
+                  Advanced built-in reports
+                </InformationServiceTitle>
+              </InformationServiceHeader>
+              <InformationServiceSummary>
+                Set internal delivery estimates and track progress toward
+                company goals. Our customisable dashboard helps you build out
+                the reports you need to keep key stakeholders informed.
+              </InformationServiceSummary>
+            </InformationServiceContainer>
+            <InformationServiceContainer>
+              <InformationServiceHeader>
+                <InformationServiceNumber>03</InformationServiceNumber>
+                <InformationServiceTitle>
+                  Everything you need in one place
+                </InformationServiceTitle>
+              </InformationServiceHeader>
+              <InformationServiceSummary>
+                Stop jumping from one service to another to communicate, store
+                files, track tasks and share documents. Manage offers an
+                all-in-one team productivity solution.
+              </InformationServiceSummary>
+            </InformationServiceContainer>
+          </InformationKeyServicesContainer>
+        </InformationContainer>
         <Slider testimonials={testimonialData} />
-      </section>
+      </Card>
     </Layout>
-
-  )
+  );
 }
